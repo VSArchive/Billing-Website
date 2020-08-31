@@ -1,0 +1,634 @@
+.parent {
+    width: 100%;
+    height: 100%;
+}
+.parent-image {
+    width: 100%;
+    height: 100%;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+* {box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+#fab {
+    color: transparent;
+}
+
+#fab:hover {
+    color: red;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.item {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.submit-button {
+    width: 50%;
+    margin-left : 25%
+}
+
+.parallax {
+    background-image: url("../images/profile.jpeg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    background-color: transparent;
+    padding: 20px 10px;
+    padding-inline-start: 20px;
+    position: fixed;
+    width: 100%;
+}   
+
+#navbar a {
+    float: left;
+    color: dodgerblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#navbar #logo {
+    font-size: 30px;
+    padding-inline-start: 100px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#navbar-right {
+    float: right;
+    padding-inline-end: 100px;
+}
+
+#navbar-right1 {
+    float: right;
+    padding-inline-end: 100px;
+}
+
+#navbar-right a {
+    width: 110px;
+}
+
+#navbar-right1 a {
+    width: 110px;
+}
+
+.editPara{
+    width: 23%;
+    float: left;
+    margin: 0px;
+    overflow: hidden;
+    border-width: 1px;
+    padding: 5px;
+    border-color: black;
+    border-style: groove;
+}
+
+.editParaBilling{
+    width: 18%;
+    float: left;
+    margin: 0px;
+    overflow: hidden;
+    border-width: 1px;
+    padding: 5px;
+    border-color: black;
+    border-style: groove;
+}
+
+.editButton{
+    width: 7%;
+    margin: 1px;
+    font-size: 28px;
+    padding: 5px;
+    background-color: white;
+    border-style: none;
+    color: blue;
+}
+
+.editButton:hover{
+    background-color: blue;
+    color: white;
+}
+
+.options{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(243, 243, 243);
+}
+
+.options a {
+    color: dodgerblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 30px; 
+    line-height: 100px;
+    border-radius: 4px;
+}
+
+.options a:hover {
+    background-color: dodgerblue;
+    color: white;
+    animation-name: expand-width;
+    animation-duration: 1s;
+}
+
+#navbar-right1 a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#navbar-right a:hover {
+    background-color: dodgerblue;
+    color: white;
+    animation-name: expand-width;
+    animation-duration: 1s;
+}
+
+@keyframes expand-width {
+    from {width: 110px;}
+    to {width: 150px;}
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    border-radius:50px;
+    text-align:center;
+}
+
+.my-float{
+  	margin-top:15px;
+}
+
+.my-float:hover{
+  	color: red;
+}
+
+#navbar-right a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#about {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+#skills {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+#projects {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+#contact {
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+#login {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 30px;
+    padding: 5%;
+    background-color: white;
+}
+
+.column-about-1 {
+    float: left;
+    width: 25%;
+}
+
+.column-about-2 {
+    float: left;
+    width: 25%;
+}
+
+.column-about-3 {
+    float: left;
+    width: 50%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column-projects {
+    float: left;
+    width: 23.33%;
+    height: 400px;
+    margin: 5%;
+}
+
+.contact-column {
+    float: left;
+    width: 40%;
+    margin: 5%;
+}
+
+/* popup*/
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-header {
+    padding: 25px;
+    padding-left: 50px;
+    background-color: white;
+    color: white;
+}
+
+.popup-body {
+    padding: 20px;
+    padding-left: 100px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.popup-footer {
+    padding: 20px;
+    background-color: white;
+    color: white;
+}
+/*popup end*/
+
+.billing-input{
+    width: 60%;
+    height: 50px;
+    padding: 12px;
+    font-size: x-large;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.billing-button {
+    height: 50px;
+    padding: 12px;
+    background-color: white;
+    font-size: x-large;
+    border: 0px;
+    margin-top: 7px;
+    margin-bottom: 16px;
+}
+
+input[type=text], select, textarea, .email {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 80, 160);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row li{
+    padding: 5px;
+}
+
+.container {
+    float: left;
+    padding: 20px ;
+    border-radius: 25px;
+    width: 20%; 
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+.title-s{
+    font-weight: bold;
+    font-size: large;
+}
+
+.title-styles{
+   font-size: large;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.des{
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.box {
+    float: left;
+    width: 25%;
+    height: auto;
+}
+.aboutme {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 0%;
+}
+
+.font-italic {
+    font-style: italic !important;
+    font-size: 20px;
+    font-weight: 1% !important;
+}
+
+.fa {
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1100px) {
+    #navbar a#logo{
+        float: none;
+        display: none;
+        text-align: none;
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
+    .item {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .submit-button {
+        width: 50%;
+        margin-left : 25%
+    }    
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        float: initial;
+        width: 50%;
+        padding: 20px ;
+        border-radius: 30px;
+    }
+    .box {
+        float: right;
+        width: 50%;
+        padding: 5%;
+        height: auto;
+    }
+    .column {
+        float: left;
+        width: 90%;
+        margin: 5%;
+    }
+    .column-projects {
+        float: left;
+        width: 90%;
+        height: 350px;
+        margin: 5%;
+    }
+    .aboutme {
+        float: inherit;
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+    
+    .column-about-1 {
+        float: left;
+        width: 50%;
+    }
+
+    .column-about-2 {
+        float: left;
+        width: 50%;
+    }
+
+    .column-about-3 {
+        float: left;
+        width: 100%;
+    }
+    #navbar-right{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #navbar-right{
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #navbar-right{
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .options a {
+        font-size: 20px; 
+        line-height: 70px;
+    }
+    #navbar {
+        float: none;
+        display: none;
+        text-align: none;
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
+    .column-about-1{
+        width: 100%;
+    }
+    .column-about-2{
+        width: 100%;
+    }
+    .column-about-3{
+        width: 100%;
+    }
+    .parent-image {
+        width: 100%;
+        height: 50%;
+    }
+    #navbar-right a:hover {
+        width: 0px;
+        height: 0px;
+    }
+    .container {
+        float: initial;
+        width: 50%;
+        padding: 20px ;
+        border-radius: 30px;
+    }
+    .box {
+        float: initial;
+        width: 100%;
+        height: auto;
+    }
+    .aboutme {
+        float: initial;
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+    .contact-column {
+        float: left;
+        width: 90%;
+        margin: 5%;
+    }
+}
