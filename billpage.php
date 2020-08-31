@@ -62,22 +62,22 @@
                         $itemDetails = $getItemQuery->fetch_assoc();
                         $item_name = $itemDetails['item_name'];
                         $price = $itemDetails['sale_price'];
-                        $count = 1;
 
-                        $sale_price = $price * $count;
-                        $insertToBillingSql = "INSERT INTO billing_table(item_name,price,count,sale_price) VALUES('$item_name', '$price', $count, '$sale_price')";
-                        $insertToBillingQuery = $conn->query($insertToBillingSql);
-
-                        // $Sql = "SELECT item_name,count FROM billing_table WHERE item_name=$item_name LIMIT 1";
-                        // $Query = $conn->query($getItemSql);
-
-                        // if ($items = $Query->fetch_assoc() !== false){
-                        //     // $count = $items['count'];
-                        //     $increaseCountSql = "UPDATE billing_table SET count=count+1 WHERE item_name=$item_name";
-                        //     $conn->query($increaseCountSql);
-                        // } else {
-                            
-                        // }
+                        $Sql123 = "SELECT * FROM billing_table WHERE item_name='$item_name'";
+                        $Query = $conn->query($Sql123);
+                        $items = $Query->fetch_assoc();
+                        if ($items != null){
+                            $count = $items['count'] + 1;
+                            $price = $items['price'];
+                            $sale_price = $count * $price;
+                            $increaseCountSql = "UPDATE billing_table SET count=$count, sale_price='$sale_price' WHERE item_name='$item_name'";
+                            $conn->query($increaseCountSql);
+                        } else {
+                            $count = 1;
+                            $sale_price = $price * $count;
+                            $insertToBillingSql = "INSERT INTO billing_table(item_name,price,count,sale_price) VALUES('$item_name', '$price', $count, '$sale_price')";
+                            $insertToBillingQuery = $conn->query($insertToBillingSql);
+                        }
 
                     }
 
@@ -104,7 +104,10 @@
                     <p class='editParaBilling' style='visibility: hidden'></p>
                     <p class='editParaBilling' style='visibility: hidden'></p>
                     <p class='editParaBilling' style='visibility: hidden'></p>
-                    <p class='editParaBilling'>".$total."</p>";
+                    <p class='editParaBilling'>".$total."</p>
+                    <form action='print.php' style='margin-bottom: 0; margin-top: 1;' method='post'>
+                        <button class='editButton' type='submit'>Print</button>
+                    </form>";
 
                 } else{
                     echo "you are not Logdin";

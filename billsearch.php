@@ -29,7 +29,7 @@
             </h3>
         </div>
         <div class="row card title-skills rounded" style="width: 90%; margin-left: 5%;">
-            <form action='billing.php' method="get">
+            <form action='billsearch.php' method="get">
                 <input id="ItemName" name="ItemName" class="billing-input" placeholder="Item Name"></input>
                 <button id="searchButton" class="billing-button fa fa-search"></button>
             </form>
